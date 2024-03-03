@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <title>Portfólio George Lucas</title>
+
+
+</head>
+
+
+<body>
+    <div class="mascara-contact" onclick="desligarMascara()">
+    </div>
+
+    <div class="contact-me">
+        <form action="https://formcarry.com/s/EHnAia3Yb9A" method="POST" enctype="multipart/form-data">
+            <p>Seu Nome</p>
+            <input type="text" placeholder="Nome" id="name-form" name="Nome">
+            <p>Número</p>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx" id="number-form" name="Número" onkeyup="handlePhone(event)"
+                maxlength="15">
+            <p>Informações sobre o Pedido</p>
+            <textarea placeholder="Digite aqui" name="Área de texto"></textarea>
+            <button type="submit" id="btnContact">Enviar</button>
+        </form>
+
+    </div>
+    <main>
+
+        <nav>
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="src/GLz4k.jpg" id="logo-img">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li class="links">
+                    <a href="#" style="--vlr:1">Início</a>
+                </li>
+                <li class="links" id="link1">
+                    <a href="#" style="--vlr:2">Habilidades</a>
+                </li>
+                <li class="links" id="link2">
+                    <a href="#" style="--vlr:3">Projetos</a>
+                </li>
+                <li class="links" id="link3">
+                    <a href="#" style="--vlr:4">Sobre</a>
+                </li>
+            </ul>
+            <button class="btn" id="btn-nav">Contrate-me</button>
+        </nav>
+
+        <header class="container">
+            <div class="description">
+                <span class="blur"></span>
+                <span class="blur"></span>
+                <span class="span-description">
+                    CRIE SEU SITE COMO UM PRO
+                </span>
+                <h1>Olá, eu sou <span class="name">George Lucas</span>, <br><span class="frontend-text">Frontend
+                        Developer</span></h1>
+                <p>Sou um desenvolvedor front-end atuando como freelancer,
+                    dedicado a transformar designs em experiências
+                    web excepcionais. Constantemente atualizo minhas
+                    habilidades para oferecer soluções inovadoras
+                    e de alta qualidade.
+                    Vamos trabalhar juntos para criar algo incrível?</p>
+
+                <button class="btn">Começar</button>
+            </div>
+
+            <div class="image-box">
+                <img src="src/header.png">
+            </div>
+
+        </header>
+
+        <div class="skills-box">
+
+            <h1>HABILIDADES</h1>
+
+            <ul class="skill-list">
+
+                <li class="card-skill" id="html-card">
+
+                    <i class="ri-html5-line" id="icons"></i>
+                    <h2>HTML</h2>
+                    <p class="card-p">Estruturação de conteúdo web usando elementos de marcação HTML,
+                        como tags e atributos, para construir interfaces e layouts funcionais.</p>
+                </li>
+
+                <li class="card-skill" id="css-card">
+
+                    <i class="ri-css3-fill" id="icons"></i>
+                    <h2>CSS</h2>
+                    <p class="card-p">Criação de layouts atraentes e responsivos, controle do posicionamento,
+                        das cores, das fontes e de outros aspectos visuais dos elementos HTML.</p>
+                </li>
+
+                <li class="card-skill" id="js-card">
+                    <i class="ri-javascript-line" id="icons"></i>
+                    <h2>JavaScript</h2>
+                    <p class="card-p">Manipulação do HTML, resposta a eventos, validação de formulários,
+                        criação de animações e funcionalidades complexas para uma experiência de usuário envolvente.</p>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div class="section-projects">
+            <span class="blur"></span>
+
+
+            <div class="text-section">
+                <h1>Principais Projetos</h1>
+                <button class="btn" id="projects-btn">
+                    <a href="https://api.whatsapp.com/send?phone=5585992406549" target="_blank">Entrar em
+                        Contato</a></button>
+            </div>
+            <ul class="projects-list">
+
+                <li class="project-card">
+
+
+                    <img src="src/album-player.png">
+                    <p>
+                        <a href="https://georgelucasglz.github.io/glz-lil-revive-album/" target="_blank"
+                            class="link-projeto">Link do projeto</a>
+                    </p>
+                </li>
+                <li class="project-card">
+
+
+                    <img src="src/weather.png">
+                    <p>
+                        <a href="https://georgelucasglz.github.io/george-lucas-previsao-do-tempo/" target="_blank"
+                            class="link-projeto">Link do projeto</a>
+                    </p>
+                </li>
+                <li class="project-card">
+
+
+                    <img src="src/pizzaria.png">
+                    <p>
+                        <a href="https://georgelucasglz.github.io/george-lucas-pizzaria-javascript/" target="_blank"
+                            class="link-projeto">Link do projeto</a>
+                    </p>
+                </li>
+                <li class="project-card">
+
+
+                    <img src="src/mario.png" id="mario-img">
+                    <p>
+                        <a href="https://georgelucasglz.github.io/mario-brothers-contact/" target="_blank" class="link-projeto">Link do projeto</a>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+
+        <footer class="footer-container">
+            <span class="blur"></span>
+
+            <h4>Midias Sociais</h4>
+            <div class="socials">
+                <a href="https://api.whatsapp.com/send?phone=5585992406549" target="_blank"><i
+                        class="ri-whatsapp-line"></i></a>
+                <a href="https://www.instagram.com/george_lucaszz/" target="_blank"><i
+                        class="ri-instagram-line"></i></a>
+                <a href="https://www.linkedin.com/in/george-matos/" target="_blank"><i
+                        class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/GeorgeLucasGLz" target="_blank"><i class="ri-github-fill"></i></a>
+
+            </div>
+
+            <div id="copy">Copyright © 2024 George Lucas. All Rights Reserved.</div>
+
+        </footer>
+
+    </main>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+
+</html>
