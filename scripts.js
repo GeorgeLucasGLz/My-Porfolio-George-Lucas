@@ -25,7 +25,7 @@ btnContact.addEventListener('click', () => {
         formContact.style.opacity = '1'
         mascaraContato.style.visibility = 'visible'
         mascaraContato.style.opacity = '0.8'
-
+        formContact.style.display = 'flex'
     }, 400);
 
 })
@@ -34,6 +34,8 @@ function desligarMascara() {
 
     mascaraContato.style.visibility = 'hidden'
     formContact.style.opacity = '0'
+    formContact.style.visibility = 'hidden'
+    
 }
 
 //Formatar input TEL
