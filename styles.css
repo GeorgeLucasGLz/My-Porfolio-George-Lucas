@@ -568,7 +568,7 @@ header .image-box::before {
 
 }
 
-#mario-img {
+#jiuJitsu-img {
     width: 100%;
     height: 340px;
 }
@@ -803,7 +803,7 @@ header .image-box::before {
         width: 120px;
     }
 
-    #mario-img {
+    #jiuJitsu-img {
         width: 100%;
         height: 280px;
     }
@@ -862,7 +862,7 @@ header .image-box::before {
         max-width: 250px;
     }
 
-    #mario-img {
+    #jiuJitsu-img {
 
         height: 250px;
     }
