@@ -76,9 +76,22 @@ function scrollToElement(elementSelector, instance = 0) {
     }
 }
 
+const start = document.getElementById('start')
 const link1 = document.getElementById('link1')
 const link2 = document.getElementById('link2')
 const link3 = document.getElementById('link3')
+
+start.addEventListener('click', () => {
+
+    scrollToElement('.skills-box')
+    h1Skills.style.animation = 'none'
+    textSection.style.transform = 'translateX(-100%)'
+    textSection.style.animation = 'RightSlide 1s ease forwards'
+    projectList.style.transform = 'translateX(100%)'
+    projectList.style.animation = 'LeftSlide 1s ease forwards'
+    projectList.style.transitionDelay = '1.2s'
+    return
+})
 
 link1.addEventListener('click', () => {
 

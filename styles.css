@@ -440,10 +440,14 @@ header .image-box::before {
 
 }
 
+#react-card{
+    background-image: linear-gradient(to right bottom, #7cc5d9, #57a4c6, #3983b1, #27639a, #24427f);
+}
+
 #node-card {
 
     background-image: linear-gradient(to left bottom, #68a063, #5ea259, #53a44d, #46a641, #37a834);
-    grid-column-end: 3;
+  
 }
 
 .skill-list h2 {
@@ -485,7 +489,7 @@ header .image-box::before {
 .card-p {
     height: 50%;
     text-align: left;
-    margin: 20px 0 25px 0;
+    margin: 15px 0 25px 0;
     padding: 0 15px;
     text-shadow: 0 0 2px white;
     text-shadow: 2px 2px 5px black;
@@ -587,6 +591,8 @@ header .image-box::before {
 
 
 
+
+
 .project-card p:hover {
 
     transform: scale(1.05);
@@ -642,9 +648,7 @@ header .image-box::before {
         max-width: 430px;
     }
 
-    #node-card {
-        grid-column-end: 3;
-    }
+    
 
 }
 
