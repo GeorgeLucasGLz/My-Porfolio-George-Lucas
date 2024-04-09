@@ -613,7 +613,7 @@ header .image-box::before {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    margin-top: 100px;
+    margin-top: 90px;
     
 }
 
@@ -641,6 +641,12 @@ header .image-box::before {
    
        
         margin-top: 100px;
+        
+    }
+
+    .footer-container {
+        
+        margin-top: 80px; 
         
     }
 
