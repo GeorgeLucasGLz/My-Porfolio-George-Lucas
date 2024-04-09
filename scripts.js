@@ -83,7 +83,7 @@ const link3 = document.getElementById('link3')
 
 start.addEventListener('click', () => {
 
-    scrollToElement('.skills-box')
+    scrollToElement('.section-projects')
     h1Skills.style.animation = 'none'
     textSection.style.transform = 'translateX(-100%)'
     textSection.style.animation = 'RightSlide 1s ease forwards'
