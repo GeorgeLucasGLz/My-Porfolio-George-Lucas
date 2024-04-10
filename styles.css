@@ -473,7 +473,7 @@ header .image-box::before {
     background-color: #323238;
     box-shadow: 0 0 22px purple;
     max-width: 300px;
-    height: 280px;
+    height: 300px;
     border-radius: 15px;
 
 
@@ -633,6 +633,8 @@ header .image-box::before {
 
 @media (width < 1258px) {
 
+ 
+
     .description h1 {
         max-width: 430px;
     }
@@ -649,6 +651,13 @@ header .image-box::before {
         margin-top: 80px; 
         
     }
+
+    .card-skill{
+        height: 400px;
+    }
+
+    
+    
 
 }
 
@@ -715,12 +724,14 @@ header .image-box::before {
         margin: 0 auto;
         justify-content: center;
         align-items: center;
+        margin-top: 30px;
 
 
     }
 
     .card-skill {
         margin: 0;
+        
     }
 
     .projects-list {
@@ -746,6 +757,8 @@ header .image-box::before {
 }
 
 @media (width < 600px) {
+
+    
     body {
 
         overflow-x: hidden;
@@ -779,10 +792,15 @@ header .image-box::before {
 
     }
 
+    
+
+
 
 }
 
 @media (width < 550px) {
+
+    
 
     .contact-me {
         width: 350px;
@@ -836,9 +854,13 @@ header .image-box::before {
         height: 280px;
     }
 
+
+    
 }
 
 @media (width < 450px) {
+
+    
     .section-projects h1 {
 
         font-size: 35px;
@@ -852,7 +874,7 @@ header .image-box::before {
 
     .card-skill {
         width: 250px;
-        height: 350px;
+        
     }
 
     .description h1 {
@@ -897,6 +919,8 @@ header .image-box::before {
 }
 
 @media (width < 430px) {
+
+    
     .contact-me {
         width: 320px;
     }
@@ -927,8 +951,6 @@ header .image-box::before {
         margin: 0 auto;
     }
 
-    .skills-box h1 {
-        font-size: 35px;
-    }
+    
 
 }
