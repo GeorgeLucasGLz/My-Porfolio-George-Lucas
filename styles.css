@@ -393,7 +393,7 @@ header .image-box::before {
 /*CARDS DE HABILIDADES*/
 
 .skills-box {
-   
+
     display: grid;
     margin-top: 0px;
     color: white;
@@ -441,14 +441,14 @@ header .image-box::before {
 
 }
 
-#react-card{
+#react-card {
     background-image: linear-gradient(to right bottom, #7cc5d9, #57a4c6, #3983b1, #27639a, #24427f);
 }
 
 #node-card {
 
     background-image: linear-gradient(to left bottom, #68a063, #5ea259, #53a44d, #46a641, #37a834);
-  
+
 }
 
 .skill-list h2 {
@@ -522,7 +522,7 @@ header .image-box::before {
 }
 
 .section-projects h1 {
-   
+
     text-transform: uppercase;
     font-size: 45px;
     color: white;
@@ -614,7 +614,7 @@ header .image-box::before {
     align-items: center;
     margin-bottom: 30px;
     margin-top: 90px;
-    
+
 }
 
 .socials i {
@@ -631,37 +631,37 @@ header .image-box::before {
     margin-bottom: 0px;
 }
 
-@media (width < 1258px) {
+@media screen and (min-width: 0px) and (max-width: 1258px) {
 
- 
+
 
     .description h1 {
         max-width: 430px;
     }
 
     .skills-box {
-   
-       
+
+
         margin-top: 100px;
-        
+
     }
 
     .footer-container {
-        
-        margin-top: 80px; 
-        
+
+        margin-top: 80px;
+
     }
 
-    .card-skill{
+    .card-skill {
         height: 400px;
     }
 
-    
-    
+
+
 
 }
 
-@media (width < 1100px) {
+@media screen and (min-width: 0px) and (max-width : 1100px) {
 
 
 
@@ -731,7 +731,7 @@ header .image-box::before {
 
     .card-skill {
         margin: 0;
-        
+
     }
 
     .projects-list {
@@ -743,22 +743,22 @@ header .image-box::before {
         margin-bottom: 50px;
     }
 
-    
+
 }
 
-@media (width < 775px) {
+@media screen and (min-width: 0px) and (max-width : 775px) {
     #node-card {
         grid-column-end: 2;
     }
 
     .section-projects h1 {
-   margin-top: 10px;
+        margin-top: 10px;
     }
 }
 
-@media (width < 600px) {
+@media screen and (min-width: 0px) and (max-width : 600px) {
 
-    
+
     body {
 
         overflow-x: hidden;
@@ -792,15 +792,15 @@ header .image-box::before {
 
     }
 
-    
+
 
 
 
 }
 
-@media (width < 550px) {
+@media screen and (min-width: 0px) and (max-width : 550px) {
 
-    
+
 
     .contact-me {
         width: 350px;
@@ -855,12 +855,12 @@ header .image-box::before {
     }
 
 
-    
+
 }
 
-@media (width < 450px) {
+@media screen and (min-width: 0px) and (max-width : 450px) {
 
-    
+
     .section-projects h1 {
 
         font-size: 35px;
@@ -874,7 +874,7 @@ header .image-box::before {
 
     .card-skill {
         width: 250px;
-        
+
     }
 
     .description h1 {
@@ -918,9 +918,9 @@ header .image-box::before {
     }
 }
 
-@media (width < 430px) {
+@media screen and (min-width: 0px) and (max-width : 430px) {
 
-    
+
     .contact-me {
         width: 320px;
     }
@@ -933,7 +933,7 @@ header .image-box::before {
 
 }
 
-@media (width< 350px) {
+@media screen and (min-width: 0px) and (max-width : 350px) {
     .image-box img {
         max-width: 300px;
     }
@@ -951,6 +951,6 @@ header .image-box::before {
         margin: 0 auto;
     }
 
-    
+
 
 }
