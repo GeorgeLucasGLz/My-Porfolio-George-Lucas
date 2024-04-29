@@ -10,6 +10,21 @@
 
 }
 
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.5s; 
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 1.2s; 
+}
+
+
 /*ANIMATIONS*/
 
 @keyframes RightSlide {
@@ -411,7 +426,7 @@ header .image-box::before {
 }
 
 
-.skill-list {
+#skill-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
@@ -451,7 +466,7 @@ header .image-box::before {
 
 }
 
-.skill-list h2 {
+#skill-list h2 {
 
     text-shadow: 0 0 7px black;
 
@@ -537,7 +552,7 @@ header .image-box::before {
 
 }
 
-.projects-list {
+#projects-list {
 
     overflow-y: auto;
     display: grid;
@@ -551,7 +566,7 @@ header .image-box::before {
 
 }
 
-.projects-list a {
+#projects-list a {
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(255, 5, 234);
@@ -598,7 +613,6 @@ header .image-box::before {
 
     transform: scale(1.05);
     transition: 0.2s ease-in;
-    background-color: black;
     border-radius: 15px;
 
 }
@@ -717,7 +731,7 @@ header .image-box::before {
         max-width: 500px;
     }
 
-    .skill-list {
+    #skill-list {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 50px;
@@ -734,7 +748,7 @@ header .image-box::before {
 
     }
 
-    .projects-list {
+    #projects-list {
         margin: 0 auto;
         grid-template-columns: repeat(1, 1fr);
     }

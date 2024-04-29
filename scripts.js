@@ -1,3 +1,22 @@
+//IntersectObserver
+
+const myObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach( (entry) =>{
+
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+
+const elementsVisibility = document.querySelectorAll('.hidden')
+
+elementsVisibility.forEach((element) => myObserver.observe(element))
+
 //VARIAVEIS
 let h1Skills = document.querySelector('.skills-box h1')
 let skillList = document.querySelector('.skill-list')
@@ -35,7 +54,7 @@ function desligarMascara() {
     mascaraContato.style.visibility = 'hidden'
     formContact.style.opacity = '0'
     formContact.style.visibility = 'hidden'
-    
+
 }
 
 //Formatar input TEL
@@ -62,7 +81,7 @@ function formatarTelefone(value) {
 //ANIMAÇÕES
 
 function scrollToElement(elementSelector, instance = 0) {
-    //Selecione todos os elementos que correspondem ao seletor fornecido
+    //Selecione todos os elementos que correspondem ao seletor fornecido    
 
 
     const elements = document.querySelectorAll(elementSelector)
