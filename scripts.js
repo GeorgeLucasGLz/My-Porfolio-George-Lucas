@@ -1,3 +1,9 @@
+function loading() {
+
+    document.getElementsByClassName('box-load')[0].style.display = "none"
+    document.getElementById('main').style.display = "flex"
+  }
+
 //IntersectObserver
 
 const myObserver = new IntersectionObserver((entries) => {

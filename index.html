@@ -13,22 +13,31 @@
 </head>
 
 
-<body>
+<body onload="loading()">
+
+    <div class="box-load">
+        <div class="pre">
+
+        </div>
+        <p>Portfólio George Lucas
+        </p>
+    </div>
+
     <div class="mascara-contact" onclick="desligarMascara()">
     </div>
 
     <div class="contact-me">
-        
+
         <form action="https://formcarry.com/s/EHnAia3Yb9A" method="POST" enctype="multipart/form-data">
             <p>Seu Nome</p>
-            <input type="text" placeholder="Nome" id="name-form" name="Nome">
+            <input type="text" placeholder="Nome" id="name-form" name="Nome" autocomplete="off">
             <p>Número</p>
             <input type="tel" placeholder="(xx) xxxxx-xxxx" id="number-form" name="Número" onkeyup="handlePhone(event)"
-                maxlength="15">
+                maxlength="15" autocomplete="off">
             <p>Informações sobre o Pedido</p>
-            <textarea placeholder="Digite aqui" name="Área de texto"></textarea>
+            <textarea placeholder="Digite aqui" name="Área de texto" autocomplete="off"></textarea>
             <button type="submit" id="btnContact">Enviar</button>
-            
+
         </form>
 
     </div>
@@ -37,7 +46,7 @@
         <nav>
 
             <ul class="nav-links">
-                
+
                 <li class="links">
                     <a href="#" style="--vlr:1">Início</a>
                 </li>
@@ -50,19 +59,19 @@
                     <a href="#" style="--vlr:2">Habilidades</a>
                 </li>
                 <li class="links" id="link3">
-                    <a href="#" style="--vlr:4">Sobre</a>
+                    <a href="#" style="--vlr:4">Contatos</a>
                 </li>
             </ul>
-            
+
             <button class="btn" id="btn-nav">Contrate-me</button>
-            
+
         </nav>
 
         <header class="container">
             <div class="description">
                 <span class="blur"></span>
                 <span class="blur"></span>
-                
+
                 <span class="span-description">
                     CRIE SEU SITE COMO UM PRO
                 </span>
@@ -87,7 +96,7 @@
 
 
         <div class="section-projects">
-          
+
 
 
             <div class="text-section">
@@ -101,10 +110,11 @@
                 <li class="project-card">
 
                     <div class="hidden">
-                        <img src="src/gmThai.png">
+                        <a href="https://academia-gm-thai.netlify.app" target="_blank">
+                            <img src="src/gmThai.png">
+                        </a>
                         <p>
-                            <a href="https://academia-gm-thai.netlify.app" target="_blank" class="link-projeto">Link do
-                                projeto</a>
+                            Academia
                         </p>
                     </div>
                 </li>
@@ -112,49 +122,33 @@
                 <li class="project-card">
                     <div class="hidden">
 
-                        <img src="src/loginPage.png">
+                        <a href="https://georgelucasglz.github.io/loginPage/" target="_blank">
+                            <img src="src/loginPage.png">
+                        </a>
                         <p>
-                            <a href="https://georgelucasglz.github.io/loginPage/" target="_blank"
-                                class="link-projeto">Link
-                                do projeto</a>
+                            Página de Login
                         </p>
                     </div>
                 </li>
 
                 <li class="project-card">
                     <div class="hidden">
+                        <a href="https://georgelucasglz.github.io/Barbearia-Project/" target="_blank">
+                            <img src="src/barberShop.png">
+                        </a>
 
-                        <img src="src/barberShop.png">
-                        <p>
-                            <a href="https://georgelucasglz.github.io/Barbearia-Project/" target="_blank"
-                                class="link-projeto">Link
-                                do projeto</a>
-                        </p>
+                        <p>Barbearia</p>
                     </div>
                 </li>
 
                 <li class="project-card">
 
                     <div class="hidden">
-                        <img src="src/rainPhoto.png">
+                        <a href="https://georgelucasglz.github.io/belezas-da-chuva-slider/" target="_blank">
+                            <img src="src/rainPhoto.png">
+                        </a>
                         <p>
-                            <a href="https://georgelucasglz.github.io/belezas-da-chuva-slider/" target="_blank"
-                                class="link-projeto">Link
-                                do projeto</a>
-                        </p>
-                    </div>
-                </li>
-
-
-
-                <li class="project-card">
-
-                    <div class="hidden">
-                        <img src="src/boloPage.png">
-                        <p>
-                            <a href="https://georgelucasglz.github.io/cantinho-da-dani/" target="_blank"
-                                class="link-projeto">Link
-                                do projeto</a>
+                            Slider de Imagens
                         </p>
                     </div>
                 </li>
@@ -164,43 +158,12 @@
                 <li class="project-card">
 
                     <div class="hidden">
-                        <img src="src/album-player.png">
-                        <p>
-                            <a href="https://georgelucasglz.github.io/glz-lil-revive-album/" target="_blank"
-                                class="link-projeto">Link do projeto</a>
-                        </p>
-                    </div>
-                </li>
-                <li class="project-card">
+                        <a href="https://georgelucasglz.github.io/cantinho-da-dani/" target="_blank">
+                            <img src=" src/boloPage.png">
+                        </a>
 
-                    <div class="hidden">
-                        <img src="src/weather.png">
                         <p>
-                            <a href="https://georgelucasglz.github.io/george-lucas-previsao-do-tempo/" target="_blank"
-                                class="link-projeto">Link do projeto</a>
-                        </p>
-                    </div>
-                </li>
-                <li class="project-card">
-                    <div class="hidden">
-
-                        <img src="src/pizzaria.png">
-                        <p>
-                            <a href="https://georgelucasglz.github.io/george-lucas-pizzaria-javascript/" target="_blank"
-                                class="link-projeto">Link do projeto</a>
-                        </p>
-                    </div>
-                </li>
-
-                <li class="project-card">
-
-                    <div class="hidden">
-                        <img src="src/convertMoney.png">
-                        <p>
-                            <a href="https://conversor-de-moedas-api.netlify.app" target="_blank"
-                                class="link-projeto">Link
-                                do
-                                projeto</a>
+                            Confeitaria
                         </p>
                     </div>
                 </li>
@@ -210,10 +173,61 @@
                 <li class="project-card">
 
                     <div class="hidden">
-                        <img src="src/ss.png">
+                        <a href="https://georgelucasglz.github.io/glz-lil-revive-album/" target="_blank">
+                            <img src="src/album-player.png">
+                        </a>
+
                         <p>
-                            <a href="https://georgelucasglz.github.io/listagem-cavaleiros-do-zodiaco/" target="_blank"
-                                class="link-projeto">Link do projeto</a>
+                            Album Player
+                        </p>
+                    </div>
+                </li>
+                <li class="project-card">
+
+                    <div class="hidden">
+                        <a href="https://georgelucasglz.github.io/george-lucas-previsao-do-tempo/" target="_blank">
+                            <img src="src/weather.png">
+                        </a>
+                        <p>
+                            Previsão do Tempo
+                        </p>
+                    </div>
+                </li>
+                <li class="project-card">
+                    <div class="hidden">
+                        <a href="https://georgelucasglz.github.io/george-lucas-pizzaria-javascript/" target="_blank">
+                            <img src="src/pizzaria.png">
+                        </a>
+                        <p>
+                            Pizzaria
+                        </p>
+                    </div>
+                </li>
+
+                <li class="project-card">
+
+                    <div class="hidden">
+                        <a href="https://conversor-de-moedas-api.netlify.app" target="_blank">
+                            <img src="src/convertMoney.png">
+                        </a>
+
+                        <p>
+                            Conversor de Moedas
+                        </p>
+                    </div>
+                </li>
+
+
+
+                <li class="project-card">
+
+                    <div class="hidden">
+                        <a href="https://georgelucasglz.github.io/listagem-cavaleiros-do-zodiaco/" target="_blank">
+                            <img src="src/ss.png">
+                        </a>
+
+                        <p>
+                            Listagem de Personagens
                         </p>
                     </div>
                 </li>
@@ -224,7 +238,7 @@
 
 
             <div class="skills-box">
-                
+
                 <h1>HABILIDADES</h1>
 
                 <ul id="skill-list">
@@ -298,14 +312,13 @@
         </div>
 
         <footer class="footer-container">
-            <span class="blur"></span>
+            <span class="blurFooter"></span>
 
             <h4>Midias Sociais</h4>
             <div class="socials">
                 <a href="https://api.whatsapp.com/send?phone=5585992406549" target="_blank"><i
                         class="ri-whatsapp-line"></i></a>
-                <a href="https://www.instagram.com/george_lucaszz/" target="_blank"><i
-                        class="ri-instagram-line"></i></a>
+                <a href="https://www.instagram.com/dev_glz/" target="_blank"><i class="ri-instagram-line"></i></a>
                 <a href="https://www.linkedin.com/in/george-matos/" target="_blank"><i
                         class="ri-linkedin-box-fill"></i></a>
                 <a href="https://github.com/GeorgeLucasGLz" target="_blank"><i class="ri-github-fill"></i></a>

@@ -24,6 +24,50 @@
     transition: all 1.2s;
 }
 
+@keyframes load {
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.box-load {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background-image: linear-gradient(to right bottom, #51067a, #371460, #231545, #161228, #070707);
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+
+
+}
+
+.pre {
+
+    width: 80px;
+    height: 80px;
+    background-image: url(./src/loading.png);
+    background-position: center;
+    background-size: contain;
+    animation: load 0.8s infinite linear;
+}
+
+.box-load p {
+
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 3px 10px black;
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+
 
 /*ANIMATIONS*/
 
@@ -386,6 +430,13 @@ header .image-box::before {
 
 .blur {
     position: absolute;
+    top: 100px;
+    box-shadow: 0 0 250px 60px rgb(1, 162, 255);
+    z-index: -100;
+}
+
+.blurFooter {
+    position: absolute;
     box-shadow: 0 0 200px 50px rgb(1, 162, 255);
     z-index: -100;
 }
@@ -554,7 +605,8 @@ header .image-box::before {
 
 #projects-list {
 
-    overflow-y: auto;
+
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
@@ -566,15 +618,7 @@ header .image-box::before {
 
 }
 
-#projects-list a {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: rgb(255, 5, 234);
-    border: 2px solid purple;
-    border-radius: 15px;
-    padding: 5px;
 
-}
 
 .project-card {
 
@@ -606,7 +650,11 @@ header .image-box::before {
 
 
 
-
+.project-card p {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
 
 
 .project-card p:hover {
@@ -615,6 +663,13 @@ header .image-box::before {
     transition: 0.2s ease-in;
     border-radius: 15px;
 
+}
+
+.project-card:nth-child(10) {
+    grid-column: 2 / 3;
+    /* Especifica que o item ocupa da segunda à terceira coluna */
+    justify-self: center;
+    /* Centraliza o item horizontalmente */
 }
 
 
@@ -683,14 +738,20 @@ header .image-box::before {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+
 }
 
 @media screen and (min-width: 0px) and (max-width : 1100px) {
 
+    .blur {
 
+        top: 650px;
+
+    }
 
     .contact-me {
-        top: 25%;
+        top: 10%;
         left: 50%;
     }
 
@@ -753,6 +814,8 @@ header .image-box::before {
 
     }
 
+
+
     .card-skill {
         margin: 0;
 
@@ -782,6 +845,12 @@ header .image-box::before {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .project-card:nth-child(10) {
+        grid-column: 2 / 1;
+        /* Especifica que o item ocupa da segunda à terceira coluna */
+
+    }
+
 }
 
 @media screen and (min-width: 0px) and (max-width : 775px) {
@@ -796,6 +865,11 @@ header .image-box::before {
 
 @media screen and (min-width: 0px) and (max-width : 600px) {
 
+    .blur {
+
+        top: 550px;
+
+    }
 
     body {
 
@@ -804,6 +878,7 @@ header .image-box::before {
 
     main {
         overflow-x: hidden;
+
     }
 
 
@@ -978,6 +1053,23 @@ header .image-box::before {
         height: 220px;
     }
 
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 375px) {
+    .contact-me {
+        top: 5%;
+        left: 50%;
+        width: 300px;
+        height: 440px;
+        
+
+    }
+
+    textarea {
+        width: 270px;
+        height: 180px;
+    }
 
 }
 
