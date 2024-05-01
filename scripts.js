@@ -1,8 +1,8 @@
 function loading() {
 
-    document.getElementsByClassName('box-load')[0].style.display = "none"
-    document.getElementById('main').style.display = "flex"
-  }
+  document.getElementsByClassName('box-load')[0].style.display = "none"
+  document.querySelector('main').style.display = "block"
+}
 
 //IntersectObserver
 
