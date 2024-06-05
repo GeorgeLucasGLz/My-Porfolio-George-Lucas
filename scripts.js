@@ -1,16 +1,16 @@
 function loading() {
 
-  document.getElementsByClassName('box-load')[0].style.display = "none"
-  document.querySelector('main').style.display = "block"
+    document.getElementsByClassName('box-load')[0].style.display = "none"
+    document.querySelector('main').style.display = "block"
 }
 
 //IntersectObserver
 
 const myObserver = new IntersectionObserver((entries) => {
 
-    entries.forEach( (entry) =>{
+    entries.forEach((entry) => {
 
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
             entry.target.classList.add('show')
         } else {
             entry.target.classList.remove('show')
