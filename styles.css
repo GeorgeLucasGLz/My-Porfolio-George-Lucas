@@ -671,12 +671,14 @@ header .image-box::before {
 
 }
 
+/*
 .project-card:nth-child(10) {
     grid-column: 2 / 3;
-    /* Especifica que o item ocupa da segunda à terceira coluna */
+    Especifica que o item ocupa da segunda à terceira coluna 
     justify-self: center;
-    /* Centraliza o item horizontalmente */
+    Centraliza o item horizontalmente 
 }
+    */
 
 /*ZAP CONTACT*/
 
