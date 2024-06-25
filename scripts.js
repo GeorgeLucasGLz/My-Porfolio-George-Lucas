@@ -108,7 +108,7 @@ const link3 = document.getElementById('link3')
 
 start.addEventListener('click', () => {
 
-    scrollToElement('.section-projects')
+    scrollToElement('.projects-carroussel')
     h1Skills.style.animation = 'none'
     textSection.style.transform = 'translateX(-100%)'
     textSection.style.animation = 'RightSlide 1s ease forwards'
@@ -129,7 +129,7 @@ link1.addEventListener('click', () => {
 })
 
 link2.addEventListener('click', () => {
-    scrollToElement('.section-projects')
+    scrollToElement('.projects-carroussel')
     h1Skills.style.animation = 'none'
     textSection.style.transform = 'translateX(-100%)'
     textSection.style.animation = 'RightSlide 1s ease forwards'

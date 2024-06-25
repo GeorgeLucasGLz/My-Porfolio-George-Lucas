@@ -227,7 +227,6 @@ textarea::placeholder {
     color: rgb(192, 192, 192);
 }
 
-
 #btnContact {
     color: white;
     cursor: pointer;
@@ -246,8 +245,6 @@ textarea::placeholder {
 #btnContact:hover {
     opacity: 0.7;
 }
-
-
 
 
 #logo-img {
@@ -287,10 +284,9 @@ textarea::placeholder {
 }
 
 body {
-
     background-color: #000000;
     width: 100%;
-
+    min-height: 100vh;
 }
 
 main {
@@ -303,15 +299,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     max-width: 100%;
-    /*1280px*/
     gap: 2rem;
     margin-top: 25px;
     align-items: center;
 
 }
-
-
-
 
 .nav-links {
     margin-left: 50px;
@@ -341,7 +333,6 @@ nav {
     left: 0;
     background-color: #cc00ff;
     transition: all 0.3s ease;
-
 }
 
 .links a:hover::after {
@@ -385,11 +376,9 @@ nav {
     max-width: 100%;
     margin: auto;
     padding-top: 5rem 2rem;
-
 }
 
 header {
-
     position: relative;
     padding-top: 2rem;
     display: grid;
@@ -420,18 +409,15 @@ header .image-box::before {
     font-weight: 400;
     line-height: 20rem;
     z-index: -100;
-
 }
 
 .container h1 {
-
     margin-top: 15px;
     font-size: 45px;
     opacity: 0;
     transform: translateX(-100%);
     animation: RightSlide 1s ease forwards;
     transition-delay: 1.2s;
-
 }
 
 .blur {
@@ -453,7 +439,6 @@ header .image-box::before {
 }
 
 .container p {
-
     margin: 20px 0 25px 0;
     opacity: 0;
     transform: translateX(100%);
@@ -465,21 +450,17 @@ header .image-box::before {
 /*CARDS DE HABILIDADES*/
 
 .skills-box {
-
     display: grid;
     margin-top: 0px;
     color: white;
     text-align: center;
-
 }
 
 .skills-box h1 {
-
     font-size: 45px;
     margin-top: 70px;
     margin-bottom: 30px;
     text-shadow: 0 0 4px white;
-
 }
 
 
@@ -490,9 +471,6 @@ header .image-box::before {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 #html-card {
@@ -529,7 +507,6 @@ header .image-box::before {
 
 }
 
-
 #icons {
     font-size: 50px;
     margin-top: 5px;
@@ -547,10 +524,6 @@ header .image-box::before {
     max-width: 300px;
     height: 300px;
     border-radius: 15px;
-
-
-
-
 
 }
 
@@ -570,115 +543,28 @@ header .image-box::before {
 
 
 /*--------------------------------------PROJETOS--------------------------------------*/
-.section-projects {
-
-    text-align: center;
-    margin: 0;
-    display: grid;
-
-}
 
 .text-section {
-    margin-top: 15vw;
 
-}
-
-.text-section h1 {
-    text-shadow: 0 0 4px white;
-
-}
-
-.text-section button {
-    margin-top: 25px;
-
-}
-
-.section-projects h1 {
-
-    text-transform: uppercase;
-    font-size: 45px;
-    color: white;
-}
-
-.section-projects p {
-    color: white;
-    max-width: 450px;
-    text-align: center;
-    margin: 15px auto;
-
-
-}
-
-#projects-list {
-
-
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    margin-bottom: 150px;
-    margin-top: 5vw;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-
-.project-card {
-
-
-
-    width: 100%;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border: 2px solid purple;
-    box-shadow: 0 0 25px purple;
-
-
-
 }
 
-.project-card img {
-
-
-    padding: 3px;
-    width: 380px;
-    height: 380px;
-    margin-top: 0;
-
-}
-
-
-
-
-.project-card p {
-    font-size: 18px;
+.text-section h1 {
+    color: white;
+    text-shadow: 0 0 4px white;
+    font-size: 45px;
     text-transform: uppercase;
-    padding-bottom: 10px;
 }
 
-
-.project-card p:hover {
-
-    transform: scale(1.05);
-    transition: 0.2s ease-in;
-    border-radius: 15px;
+.text-section button {
+    margin-top: 15px;
 
 }
 
-/*
-.project-card:nth-child(10) {
-    grid-column: 2 / 3;
-    Especifica que o item ocupa da segunda à terceira coluna 
-    justify-self: center;
-    Centraliza o item horizontalmente 
-}
-    */
 
 /*ZAP CONTACT*/
 
@@ -719,52 +605,30 @@ header .image-box::before {
 
 @media screen and (min-width: 0px) and (max-width: 1258px) {
 
-
-
     .description h1 {
         max-width: 430px;
     }
 
     .skills-box {
-
-
         margin-top: 100px;
-
     }
 
     .footer-container {
-
         margin-top: 80px;
-
     }
 
     .card-skill {
         height: 400px;
     }
 
-
-
-
 }
 
-@media screen and (min-width: 0px) and (max-width : 1300px) {
-
-    #projects-list {
-
-        overflow-y: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-}
+@media screen and (min-width: 0px) and (max-width : 1300px) {}
 
 @media screen and (min-width: 0px) and (max-width : 1100px) {
 
     .blur {
-
         top: 650px;
-
     }
 
     .contact-me {
@@ -774,7 +638,6 @@ header .image-box::before {
 
     nav {
         max-width: 100%;
-        /*1280px*/
         margin: 0 auto;
         gap: 2rem;
         justify-content: end;
@@ -831,41 +694,16 @@ header .image-box::before {
 
     }
 
-
-
     .card-skill {
         margin: 0;
 
     }
-
-
-
-    #projects-btn {
-        margin-bottom: 50px;
-    }
-
 
 }
 
 @media screen and (min-width: 0px) and (max-width : 880px) {
     #node-card {
         grid-column-end: 2;
-    }
-
-    .section-projects h1 {
-        margin-top: 10px;
-    }
-
-
-    #projects-list {
-        margin: 0 auto;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .project-card:nth-child(10) {
-        grid-column: 2 / 1;
-        /* Especifica que o item ocupa da segunda à terceira coluna */
-
     }
 
 }
@@ -931,13 +769,6 @@ header .image-box::before {
 
 @media screen and (min-width: 0px) and (max-width : 550px) {
 
-    #projects-list {
-
-        overflow-y: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
     .contact-me {
         width: 350px;
     }
@@ -995,7 +826,9 @@ header .image-box::before {
 
     }
 
-
+    .text-section h1 {
+        font-size: 35px;
+    }
 
 }
 
@@ -1071,7 +904,9 @@ header .image-box::before {
         height: 220px;
     }
 
-
+    .text-section h1 {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 375px) {
@@ -1080,13 +915,15 @@ header .image-box::before {
         left: 50%;
         width: 300px;
         height: 440px;
-
-
     }
 
     textarea {
         width: 270px;
         height: 180px;
+    }
+
+    .text-section h1 {
+        font-size: 25px;
     }
 
 }
@@ -1109,6 +946,9 @@ header .image-box::before {
         margin: 0 auto;
     }
 
+    .text-section h1 {
+        font-size: 20px;
+    }
 
 
 }

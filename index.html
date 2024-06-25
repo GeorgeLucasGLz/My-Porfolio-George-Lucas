@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carroussel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <title>Portfólio George Lucas</title>
     <link rel="icon" type="image/png" href="src/icon.webp" />
@@ -95,9 +97,7 @@
 
 
 
-        <div class="section-projects">
-
-
+        <div class="projects-carroussel">
 
             <div class="text-section">
                 <h1>Principais Projetos</h1>
@@ -105,208 +105,192 @@
                     <a href="https://api.whatsapp.com/send?phone=5585992406549" target="_blank">Entrar em
                         Contato</a></button>
             </div>
-            <ul id="projects-list">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-    
-
-                <li class="project-card">
-
-                    <div class="hidden">
+                    <div class="swiper-slide">
                         <a href="https://academia-gm-thai.netlify.app" target="_blank">
-                            <img src="src/gmThai.webp">
+                            <img src="./src/gmThai.webp" />
+                            <div class="title">
+                                <span>Academia</span>
+                            </div>
                         </a>
-                        <p>
-                            Academia
-                        </p>
                     </div>
-                </li>
 
-                <li class="project-card">
-                    <div class="hidden">
-
-                        <a href="https://georgelucasglz.github.io/loginPage/" target="_blank">
-                            <img src="src/loginPage.webp">
+                    <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/loginPage/" target="_blank"">
+                        <img src=" ./src/loginPage.webp" />
+                        <div class="title">
+                            <span>Login Page</span>
+                        </div>
                         </a>
-                        <p>
-                            Página de Login
-                        </p>
                     </div>
-                </li>
 
-                <li class="project-card">
-                    <div class="hidden">
+                    <div class="swiper-slide">
+                        <a href="https://conectaimoveisconceito.com.br" target="_blank">
+                            <img src="./src/imobiliaria.png" />
+                            <div class="title">
+                                <span>Imobiliária</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/pet-shop/" target="_blank">
+                            <img src="./src/petShop.png" />
+                            <div class="title">
+                                <span>Pet Shop</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
                         <a href="https://georgelucasglz.github.io/Barbearia-Project/" target="_blank">
-                            <img src="src/barberShop.webp">
+                            <img src="./src/barberShop.webp" />
+                            <div class="title">
+                                <span>Barbearia</span>
+                            </div>
                         </a>
-
-                        <p>Barbearia</p>
                     </div>
-                </li>
 
-                <li class="project-card">
-
-                    <div class="hidden">
-                        <a href="https://georgelucasglz.github.io/glz-lil-revive-album/" target="_blank">
-                            <img src="src/album-player.webp">
+                    <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/almaMusical/" target="_blank">
+                            <img src="./src/album-player.webp" />
+                            <div class="title">
+                                <span>Album Player</span>
+                            </div>
                         </a>
-
-                        <p>
-                            Album Player
-                        </p>
                     </div>
-                </li>
 
-                <li class="project-card">
-
-                    <div class="hidden">
+                    <div class="swiper-slide">
                         <a href="https://georgelucasglz.github.io/cantinho-da-dani/" target="_blank">
-                            <img src="src/boloPage.webp">
+                            <img src="./src/boloPage.webp" />
+                            <div class="title">
+                                <span>Confeitaria</span>
+                            </div>
                         </a>
-
-                        <p>
-                            Confeitaria
-                        </p>
                     </div>
-                </li>
 
-
-                <li class="project-card">
-
-                    <div class="hidden">
-                        <a href="https://georgelucasglz.github.io/belezas-da-chuva-slider/" target="_blank">
-                            <img src="src/rainPhoto.webp">
-                        </a>
-                        <p>
-                            Slider de Imagens
-                        </p>
-                    </div>
-                </li>
-
-
-                <li class="project-card">
-
-                    <div class="hidden">
+                    <div class="swiper-slide">
                         <a href="https://georgelucasglz.github.io/george-lucas-previsao-do-tempo/" target="_blank">
-                            <img src="src/weather.webp">
+                            <img src="./src/weather.webp" />
+                            <div class="title">
+                                <span>Previsão do Tempo</span>
+                            </div>
+
                         </a>
-                        <p>
-                            Previsão do Tempo
-                        </p>
                     </div>
-                </li>
-                <li class="project-card">
-                    <div class="hidden">
+
+                    <div class="swiper-slide">
                         <a href="https://georgelucasglz.github.io/george-lucas-pizzaria-javascript/" target="_blank">
-                            <img src="src/pizzaria.webp">
+                            <img src="./src/pizzaria.webp" />
+                            <div class="title">
+                                <span>Pizzaria</span>
+                            </div>
+
                         </a>
-                        <p>
-                            Pizzaria
-                        </p>
                     </div>
-                </li>
 
-                <li class="project-card">
 
-                    <div class="hidden">
+                    <div class="swiper-slide">
                         <a href="https://conversor-de-moedas-api.netlify.app" target="_blank">
-                            <img src="src/convertMoney.webp">
+                            <img src="./src/convertMoney.webp" />
+                            <div class="title">
+                                <span>Conversor de Moedas</span>
+                            </div>
+
                         </a>
-
-                        <p>
-                            Conversor de Moedas
-                        </p>
                     </div>
-                </li>
 
-
-
-                <li class="project-card">
-
-                    <div class="hidden">
+                    <div class="swiper-slide">
                         <a href="https://georgelucasglz.github.io/listagem-cavaleiros-do-zodiaco/" target="_blank">
-                            <img src="src/ss.webp">
+                            <img src="./src/ss.webp" />
+                            <div class="title">
+                                <span>Listagem de Personagens</span>
+                            </div>
+
                         </a>
-
-                        <p>
-                            Listagem de Personagens
-                        </p>
                     </div>
-                </li>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
 
 
+
+
+        <div class="skills-box">
+
+            <h1>HABILIDADES</h1>
+
+            <ul id="skill-list">
+
+                <div class="hidden">
+                    <li class="card-skill" id="html-card">
+
+                        <i class="ri-html5-line" id="icons"></i>
+                        <h2>HTML</h2>
+                        <p class="card-p">Estruturação de conteúdo web usando elementos de marcação HTML,
+                            como tags e atributos, para construir interfaces e layouts funcionais.</p>
+
+                    </li>
+                </div>
+
+                <div class="hidden">
+                    <li class="card-skill" id="css-card">
+
+                        <i class="ri-css3-fill" id="icons"></i>
+                        <h2>CSS</h2>
+                        <p class="card-p">Criação de layouts atraentes e responsivos, controle do posicionamento,
+                            das cores, das fontes e de outros aspectos visuais dos elementos HTML.</p>
+
+                    </li>
+                </div>
+
+                <div class="hidden">
+                    <li class="card-skill" id="js-card">
+
+                        <i class="ri-javascript-line" id="icons"></i>
+                        <h2>JavaScript</h2>
+                        <p class="card-p">Manipulação do HTML, resposta a eventos, validação de formulários,
+                            criação de animações e funcionalidades complexas para uma experiência de usuário
+                            envolvente.
+                        </p>
+
+                    </li>
+                </div>
+
+                <div class="hidden">
+                    <li class="card-skill" id="react-card">
+
+                        <i class="ri-reactjs-line" id="icons"></i>
+                        <h2>React.js</h2>
+                        <p class="card-p">Manipulação eficiente do DOM virtual, gerenciamento de estado e
+                            componentes
+                            reutilizáveis. Formulários interativos,
+                            animações fluidas e experiência de usuário envolvente.</p>
+                    </li>
+                </div>
+
+                <div class="hidden">
+                    <li class="card-skill" id="node-card">
+
+                        <i class="ri-nodejs-line" id="icons"></i>
+                        <h2>Node.js</h2>
+                        <p class="card-p">Manipulação de servidores web, resposta a solicitações de eventos,
+                            desenvolvimento de APIs e aplicativos
+                            escaláveis para proporcionar uma experiência de usuário dinâmica e interativa.</p>
+
+                    </li>
+                </div>
 
             </ul>
 
 
-            <div class="skills-box">
-
-                <h1>HABILIDADES</h1>
-
-                <ul id="skill-list">
-
-                    <div class="hidden">
-                        <li class="card-skill" id="html-card">
-
-                            <i class="ri-html5-line" id="icons"></i>
-                            <h2>HTML</h2>
-                            <p class="card-p">Estruturação de conteúdo web usando elementos de marcação HTML,
-                                como tags e atributos, para construir interfaces e layouts funcionais.</p>
-
-                        </li>
-                    </div>
-
-                    <div class="hidden">
-                        <li class="card-skill" id="css-card">
-
-                            <i class="ri-css3-fill" id="icons"></i>
-                            <h2>CSS</h2>
-                            <p class="card-p">Criação de layouts atraentes e responsivos, controle do posicionamento,
-                                das cores, das fontes e de outros aspectos visuais dos elementos HTML.</p>
-
-                        </li>
-                    </div>
-
-                    <div class="hidden">
-                        <li class="card-skill" id="js-card">
-
-                            <i class="ri-javascript-line" id="icons"></i>
-                            <h2>JavaScript</h2>
-                            <p class="card-p">Manipulação do HTML, resposta a eventos, validação de formulários,
-                                criação de animações e funcionalidades complexas para uma experiência de usuário
-                                envolvente.
-                            </p>
-
-                        </li>
-                    </div>
-
-                    <div class="hidden">
-                        <li class="card-skill" id="react-card">
-
-                            <i class="ri-reactjs-line" id="icons"></i>
-                            <h2>React.js</h2>
-                            <p class="card-p">Manipulação eficiente do DOM virtual, gerenciamento de estado e
-                                componentes
-                                reutilizáveis. Formulários interativos,
-                                animações fluidas e experiência de usuário envolvente.</p>
-                        </li>
-                    </div>
-
-                    <div class="hidden">
-                        <li class="card-skill" id="node-card">
-
-                            <i class="ri-nodejs-line" id="icons"></i>
-                            <h2>Node.js</h2>
-                            <p class="card-p">Manipulação de servidores web, resposta a solicitações de eventos,
-                                desenvolvimento de APIs e aplicativos
-                                escaláveis para proporcionar uma experiência de usuário dinâmica e interativa.</p>
-
-                        </li>
-                    </div>
-
-                </ul>
-
-
-            </div>
+        </div>
 
 
 
@@ -337,7 +321,8 @@
 
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./projects.js"></script>
     <script src="scripts.js"></script>
 </body>
 
