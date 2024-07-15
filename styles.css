@@ -548,6 +548,7 @@ nav {
 /*ZAP CONTACT*/
 
 .zap-icon {
+    z-index: 2000;
     font-size: 30px;
     right: 15px;
     bottom: 15px;
@@ -871,7 +872,7 @@ nav {
         width: 200px;
         height: 200px;
     }
- 
+
     .description h1 {
         font-size: 25px;
     }
