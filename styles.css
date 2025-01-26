@@ -447,13 +447,13 @@ nav {
 .blur {
     position: absolute;
     top: 100px;
-    box-shadow: 0 0 320px 60px rgb(1, 162, 255);
+    box-shadow: 0 0 320px 60px rgb(177, 0, 162);
     z-index: -100;
 }
 
 .blurFooter {
     position: absolute;
-    box-shadow: 0 0 200px 50px rgb(1, 162, 255);
+    box-shadow: 0 0 200px 50px rgb(177, 0, 162);
     z-index: -100;
 }
 
@@ -640,8 +640,13 @@ nav {
 @media screen and (min-width: 0px) and (max-width : 1100px) {
 
     .blur {
-        top: 650px;
+       display: none;
     }
+    
+    .blurFooter {
+        display: none;
+    }
+
 
     .contact-me {
         top: 10%;
@@ -749,9 +754,9 @@ nav {
 
 @media screen and (min-width: 0px) and (max-width : 600px) {
 
-    .blur {
+    /* .blur {
         top: 550px;
-    }
+    } */
 
     body {
         overflow-x: hidden;
